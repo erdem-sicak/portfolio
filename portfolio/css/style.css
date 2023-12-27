@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;900&family=Kdam+Thmor+Pro&family=Vina+Sans&display=swap');
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/beatriz-perez-moya-XN4T2PVUUgk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*top-nav*/
+.info-box {
+    text-decoration: none;
+    color:rgb(4, 204, 40);
+    border: solid 1px rgb(4, 204, 40);
+    border-radius: 3px;
+    font-size: 11px;
+    padding: 5px;
+}
+.info-box:hover{
+    color:black;
+    border: solid 1px rgb(4, 204, 40);
+    background-color: rgb(4, 204, 40);
+}
+.top-nav {
+    background: #000;
+}
+.social-links {
+    color: rgb(4, 204, 40);
+    align-items: center;
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 3px;
+    border: solid 1px rgb(4, 204, 40);
+}
+.social-links:hover {
+    color: black;
+    background-color: rgb(4, 204, 40);
+}
+/*navbar*/
+.navbar-brand {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 45px;
+}
+.nav-link {
+    color: #000;
+    font-size: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.nav-link:hover {
+    color:rgb(4, 204, 40);
+    transition: 0.3s ease;
+}
+.btn {
+    background-color: #000;
+    color: rgb(4, 204, 40);
+}
+.btn:hover {
+    background-color:rgb(4, 204, 40);
+    color: #000;
+}
+
+/*hero*/
+
+.my-cv {
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 115px;
+    margin-top: 5rem;
+}
+span{
+    color: rgb(4, 204, 40);
+}
+.hero {
+    color:rgb(4, 204, 40);
+    background: none;
+    border: solid 2px rgb(4, 204, 40);
+}
+
+.hero:hover {
+    color:#000;
+    background: rgb(4, 204, 40);
+}
+/*skill-box*/
+.skill-set {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.card {
+    background: none;
+}
+.card-body {
+    background: black;
+    width: 100%;
+    height: 41vh;
+}
+.card-body h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 31px;
+    color: rgb(4, 204, 40);
+    padding-top: 2.3rem;
+}
+.card-body p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: rgb(4, 204, 40);
+    padding-top: 1.3rem;
+}
+
+/* About */
+.about-wrap {
+    background: black;
+    border-radius: 25px;
+    margin: 1px 1px 45px 1px;
+}
+.pic {
+    margin-top: 25px;
+    margin-left: 25px;
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left   var(--_i,0%) top    var(--_g),
+    bottom var(--_i,0%) left   var(--_g),
+    top    var(--_i,0%) right  var(--_g),
+    right  var(--_i,0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale();
+  transition: .3s linear;
+  cursor: pointer;
+}
+.pic:hover {
+    --_i: 10%;
+  filter: grayscale(0);
+}
+.about-card {
+    height: 500px;
+}
+
+/* Contact */
+.form {
+    background-color: #000;
+    border-radius: 25px;
+    padding: 2rem;
+    margin: 1px 1px 45px 1px;
+}
+.form-control {
+    border: none;
+    background-color: rgb(4, 204, 40);
+}
+.form-text, .form-label, .form-check-label {
+    color: rgb(4, 204, 40);
+}
+.form-check-input {
+    background-color: black;
+    border: solid 1px rgb(4, 204, 40);
+}
+.form-btn{
+    background-color: black;
+    border: 2px solid rgb(4, 204, 40);
+}
+.c-t {
+    margin-top: 25px;
+    color: rgb(4, 204, 40);
+    font-weight: 900;
+    font-size: 45px;
+}
+.c-p{
+    color: rgb(4, 204, 40);
+    font-weight: 300;
+    width: 400px;
+}
+    
+/* Footer */
+
+footer {
+    background-color: black;
+    padding: 25px;
+    margin-top: 25px;
+}
+footer p {
+    text-align: center;
+    color: rgb(4, 204, 40);
+}
+.sm-foot {
+    margin-left: 3px;
+    display: flex;
+    justify-content: center;
+}
+.sm-foot a {
+    margin-left: 9px;
+    margin-bottom: 15px;
+    font-size: 23px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .pic-box {
+        width: 450px;
+    }
+    .title-about {
+        margin-top: -5rem;
+    }
+    .card-p {
+        width: 100%;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-form {
+        width: 100%;
+    }
+    .c-p {
+        width: 100%;
+    }
+    
+}
